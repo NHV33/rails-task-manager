@@ -1,0 +1,15 @@
+<div class="container w-50">
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <h1 class="pt-3">Edit Task</h1>
+    <%= form_with model: @task do |f| %>
+      <div class="p-1"><%= f.label :title %></div>
+      <div class="p-1"><%= f.text_field :title %></div>
+      <div class="p-1"><%= f.label :details %></div>
+      <div class="p-1"><%= f.text_field :details %></div>
+
+      <div class="d-flex justify-content-end p-1">
+        <input type="submit" value="Save" class="btn btn-success shadow-sm">
+      </div>
+    <% end %>
+  </div>
+</div>
